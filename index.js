@@ -124,4 +124,11 @@ divSeleccionada.addEventListener("click", function(){
 }
 );
 
+const botonOtraCarta = document.querySelector(".otra");
 
+botonOtraCarta.addEventListener("click", function () {
+    let numeroCartas = parseInt(inputNumCartas.value, 10);
+    numeroCartas += 1; 
+    inputNumCartas.value = numeroCartas; 
+    generarCartas(numeroCartas); 
+});
